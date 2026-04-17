@@ -1,0 +1,80 @@
+:root {
+  /* Heirloom Editorial palette */
+  --paper: #f2e8d2;
+  --paper-warm: #ede1c6;
+  --paper-deep: #e4d5b4;
+  --ink: #253028;
+  --ink-soft: #4a5a4e;
+  --ink-faint: #7a7866;
+  --accent: #a65a2e;
+  --accent-soft: #c58e60;
+  --accent-deep: #723b1c;
+  --line: rgba(37, 48, 40, 0.35);
+  --line-faint: rgba(37, 48, 40, 0.18);
+
+  /* Type */
+  --font-display: 'Italiana', 'Cormorant Garamond', serif;
+  --font-serif: 'Cormorant Garamond', 'Cormorant', serif;
+  --font-sc: 'Cormorant SC', 'Cormorant Garamond', serif;
+  --font-script: 'Pinyon Script', 'Cormorant Garamond', cursive;
+  --font-cyr: 'Playfair Display', 'Italiana', 'Cormorant Garamond', serif;
+
+  color-scheme: light;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  font-kerning: normal;
+  font-feature-settings: 'liga', 'dlig', 'kern';
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
+html {
+  background: var(--paper);
+}
+
+body {
+  margin: 0;
+  background:
+    radial-gradient(
+      ellipse 140% 100% at 50% 0%,
+      var(--paper-warm) 0%,
+      var(--paper) 45%,
+      var(--paper-deep) 100%
+    ),
+    var(--paper);
+  color: var(--ink);
+  font-family: var(--font-serif);
+  font-weight: 300;
+  line-height: 1.5;
+  letter-spacing: 0.01em;
+  overflow-x: hidden;
+}
+
+::selection {
+  background: var(--accent);
+  color: var(--paper);
+}
+
+a {
+  color: inherit;
+}
+
+button {
+  font: inherit;
+  background: none;
+  border: 0;
+  cursor: pointer;
+  color: inherit;
+}
+
+p { margin: 0; }
+h1, h2, h3 { margin: 0; font-weight: 400; }
