@@ -33,7 +33,7 @@ export default function App() {
           <header className="top fade" style={delay(0.05)}>
             <Sprig />
             <p className="overline">
-              <span>Engagement</span>
+              <span>Wedding</span>
             </p>
           </header>
 
