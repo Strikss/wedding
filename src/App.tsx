@@ -34,8 +34,6 @@ export default function App() {
             <Sprig />
             <p className="overline">
               <span>Engagement</span>
-              <span className="dot" aria-hidden="true">·</span>
-              <span className="cyr">Заручини</span>
             </p>
           </header>
 
@@ -82,11 +80,11 @@ export default function App() {
           <section className="details fade" style={delay(0.8)}>
             <div className="detail">
               <p className="detail-label">When</p>
-              <p className="detail-value">Saturday, the Twelfth of September</p>
+              <p className="detail-value">Saturday, the Twenty-Fifth of April</p>
               <p className="detail-sub">
                 Two Thousand &amp; Twenty-Six
                 <span className="bullet" aria-hidden="true">✦</span>
-                Half past six in the evening
+                Five o'clock in the evening
               </p>
             </div>
 
@@ -94,11 +92,18 @@ export default function App() {
 
             <div className="detail">
               <p className="detail-label">Where</p>
-              <p className="detail-value">Villa Sofia</p>
+              <a
+                className="detail-value detail-location"
+                href="https://maps.app.goo.gl/KCAfuD1PfechWmER9?g_st=ic"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Riso Restaurant &amp; Terrace
+              </a>
               <p className="detail-sub">
-                Kyiv
+                Budapest
                 <span className="bullet" aria-hidden="true">·</span>
-                Ukraine
+                Hungary
               </p>
             </div>
           </section>
@@ -107,18 +112,6 @@ export default function App() {
             <p className="closing">
               <em>Your presence is our greatest gift.</em>
             </p>
-            <a
-              className="rsvp-btn"
-              href={`mailto:rsvp@mykhailoanddiana.com?subject=${encodeURIComponent(
-                `RSVP${guest ? ` · ${guest}` : ''}`
-              )}`}
-            >
-              <span className="rsvp-btn-inner">
-                <span className="rsvp-btn-label">Kindly reply</span>
-                <span className="rsvp-btn-dash" aria-hidden="true" />
-                <span className="rsvp-btn-date">by the fifteenth of August</span>
-              </span>
-            </a>
           </section>
 
           <footer className="foot fade" style={delay(1.15)}>
@@ -128,7 +121,7 @@ export default function App() {
               <span className="mono-letter">D</span>
             </div>
             <p className="foot-note">
-              <span>Kyiv</span>
+              <span>Budapest</span>
               <span className="bullet" aria-hidden="true">·</span>
               <span>MMXXVI</span>
             </p>

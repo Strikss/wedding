@@ -353,6 +353,35 @@
   letter-spacing: 0.01em;
 }
 
+.detail-location {
+  text-decoration: none;
+  position: relative;
+  transition: color 0.3s;
+}
+
+.detail-location::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: currentColor;
+  opacity: 0.35;
+  transform: scaleX(0.6);
+  transform-origin: center;
+  transition: transform 0.4s cubic-bezier(0.2, 0.7, 0.1, 1), opacity 0.3s;
+}
+
+.detail-location:hover {
+  color: var(--accent);
+}
+
+.detail-location:hover::after {
+  transform: scaleX(1);
+  opacity: 0.6;
+}
+
 .detail-sub {
   font-family: var(--font-serif);
   font-style: italic;
